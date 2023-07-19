@@ -1,0 +1,20 @@
+CREATE TABLE `users`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `firs_name` VARCHAR(250) NOT NULL,
+    `last_name` VARCHAR(250) NOT NULL,
+    `email` VARCHAR(250) NOT NULL,
+    PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `books`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `user_id` INT NOT NULL,
+    `isbn` VARCHAR(250) NOT NULL,
+    `title` VARCHAR(250) NOT NULL, 
+    PRIMARY KEY(`id`), 
+    FOREIGN KEY(`user_id`) REFERENCES users(id) 
+); 
+
+ALTER TABLE `users`
+ADD COLUMN `cedula` VARCHAR(250) NOT NULL AFTER `last_name`;
