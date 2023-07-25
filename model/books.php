@@ -67,11 +67,11 @@ class books{
 
 
 
-    public function __construct(
-        PDO $connection
-    ){
-        $this -> db = $connection;
-    }
+    // public function __construct(
+    //     PDO $connection
+    // ){
+    //     $this -> db = $connection;
+    // }
 
     function getAll(){
         $stm = $this -> db -> prepare("SELECT * FROM books");

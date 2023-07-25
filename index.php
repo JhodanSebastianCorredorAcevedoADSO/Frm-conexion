@@ -2,16 +2,16 @@
 
 // Indicamos que trabajaremos en directorio que estamos situados (__DIR__)
 //Incluimos el fichero de configuración 
-require_once('../config/config.php');
+require_once('config/config.php');
 
 //Incluimos la clase conexion a la base de datos
-require_once('../libs/database.php');
+require_once('libs/database.php');
 
 // Incluimos la clase usuario
-require_once('../model/users.php');
+require_once('model/users.php');
 
 // Incluimos la clase libro
-require_once('../model/books.php');
+require_once('model/books.php');
 
 
 
