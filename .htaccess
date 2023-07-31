@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://([-a-z0-9]+\.)?example\.com[NC]
+RewriteRule .*\.(zip|mp3|avi|wmv|mpg|mpeg)$
+http://www.example.com/images/nohotlink.gif [R,NC,L]
